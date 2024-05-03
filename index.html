@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La LIGA</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+    <div class="wrapper body">
+        <header class="header-mobile">
+            <h1 class="logo">La LIGA</h1>
+            <button class="open-menu" id="open-menu">
+                <i class="bi bi-list"></i>
+            </button>
+        </header>
+        <aside>
+            <button class="close-menu" id="close-menu">
+                <i class="bi bi-x"></i>
+            </button>
+            <header>
+                <h1 class="logo">La LIGA</h1>
+            </header>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <button id="todos1" class="boton-menu boton-categoria active"><i class="bi bi-hand-index-thumb-fill"></i> Agregar Jugador</button>
+                    </li>
+                    <li>
+                        <button id="abrigos1" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Lista de judadores</button>
+                    </li>
+                    <li>
+                        <button id="camisetas1" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Editar jugador</button>
+                    </li>
+                    <li>
+                        <button id="pantalones1" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Editar Equipos</button>
+                    </li>
+                    <li>
+                        <a class="boton-menu boton-carrito" href="#">
+                            <i class="bi bi-box-arrow-in-right"></i> Ingresar
+                        </a>
+                    </li>
+                    <li>
+                        <a class="boton-menu" href="#">
+                            <i class="bi bi-person-plus"></i> Registrarse
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <footer>
+                <p class="texto-footer">© 2024 Fares fACTORY</p>
+            </footer>
+        </aside>
+        <!-- Contenido -->
+        <div class="centrar">
+            <div class="traslucido" style="display: none; margin: 50px auto; max-width: 400px;" id="contenedorCamara">
+                <button class="equis" id="closeButton">x</button>
+                <div  id="reader"></div>
+            </div>
+            
+       
+        <div style="padding: 10px; margin: 0 auto; color: #fff;" id="result"></div>
+        
+        <div class="containerF traslucido" id="datos">
+            <h2>Agregar Jugador</h2>
+            <form>
+              <div class="form-group">
+                <label for="selectEquipo">Equipo:</label>
+                <select id="selectEquipo">
+                  <option>Equipo 1</option>
+                  <option>Equipo 2</option>
+                  <option>Equipo 3</option>
+                </select>
+              </div>
+              <div class="flexEnd">
+                <a id="startButton" style="width: 50%;">Scanear DNI</a>
+              </div>
+              <div class="form-group">
+                <label for="inputNombre">Nombre:</label>
+                <input type="text" id="inputNombre" placeholder="Ingrese el nombre">
+              </div>
+              <div class="form-group">
+                <label for="inputApellido">Apellido:</label>
+                <input type="text" id="inputApellido" placeholder="Ingrese el apellido">
+              </div>
+              <div class="form-group">
+                <label for="selectSexo">Sexo:</label>
+                <select id="selectSexo">
+                  <option>Masculino</option>
+                  <option>Femenino</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="inputDNI">DNI:</label>
+                <input type="text" id="inputDNI" placeholder="Ingrese el DNI">
+              </div>
+              <div class="form-group">
+                <label for="inputFechaNacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="inputFechaNacimiento">
+              </div>
+              <div class="form-group">
+                <label for="inputEdad">Edad:</label>
+                <input type="number" id="inputEdad" placeholder="Ingrese la edad">
+              </div>
+              <button type="submit">Agregar Jugador</button>
+            </form>
+          </div>
+              
+        </div>
+        </div>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5-qrcode/2.3.4/html5-qrcode.min.js" integrity="sha512-k/KAe4Yff9EUdYI5/IAHlwUswqeipP+Cp5qnrsUjTPCgl51La2/JhyyjNciztD7mWNKLSXci48m7cctATKfLlQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/pdf417.js"></script>
+</body>
+</html>
